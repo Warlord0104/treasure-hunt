@@ -76,7 +76,7 @@
       const input = document.getElementById("password").value.toLowerCase().trim();
       const correctPassword = "dilibadat";
       if (input === correctPassword) {
-        window.location.href = "https://your-next-clue-link.com"; // replace with actual link
+        window.location.href = "https://youtu.be/fKIJhHUW-G0?si=mGdo_oYm_IA9Zrdl"; // replace with actual link
       } else {
         document.getElementById("error").textContent = "Hmm... try again, love.";
       }

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Journey Begins 💌</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #ffe0ec, #fff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #333;
+    }
+    .container {
+      background: white;
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      text-align: center;
+      max-width: 400px;
+      width: 90%;
+    }
+    h1 {
+      font-size: 2em;
+      color: #d63384;
+    }
+    p {
+      margin: 1.2rem 0;
+      font-size: 1.1em;
+    }
+    input[type="password"] {
+      padding: 0.7rem;
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      font-size: 1em;
+    }
+    button {
+      background: #d63384;
+      color: white;
+      padding: 0.7rem 1.2rem;
+      border: none;
+      border-radius: 10px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #a61e6e;
+    }
+    .error {
+      color: red;
+      margin-top: 0.5rem;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Hey Sonu 🌷</h1>
+    <p>Your journey begins here.<br/>
+    Enter the password to unlock your first memory.</p>
+
+    <input type="password" id="password" placeholder="Enter the song name..." />
+    <button onclick="checkPassword()">Unlock 💖</button>
+    <div class="error" id="error"></div>
+  </div>
+
+  <script>
+    function checkPassword() {
+      const input = document.getElementById("password").value.toLowerCase().trim();
+      const correctPassword = "dilibadat";
+      if (input === correctPassword) {
+        window.location.href = "https://your-next-clue-link.com"; // replace with actual link
+      } else {
+        document.getElementById("error").textContent = "Hmm... try again, love.";
+      }
+    }
+  </script>
+</body>
+</html>
